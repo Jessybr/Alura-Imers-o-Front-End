@@ -1,0 +1,76 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  color: white;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  padding: 12px;
+  width: 300px;
+}
+.sidebar .sidebar_navigation, .sidebar .library {
+  background-color: #121212;
+  border-radius: 8px;
+  padding: 16px 0 0 16px;
+}
+.sidebar .sidebar_navigation .logo, .sidebar .library .logo {
+  background-color: #121212;
+  display: flex;
+  border-radius: 8px;
+  padding: 16px 0 0 16px;
+}
+.sidebar .sidebar_navigation .logo img, .sidebar .library .logo img {
+  width: 80px;
+}
+.sidebar .sidebar_navigation ul, .sidebar .library ul {
+  margin-top: 20px;
+  padding: 0 20px 10px 20px;
+}
+.sidebar .sidebar_navigation ul li, .sidebar .library ul li {
+  padding: 10px 0;
+}
+.sidebar .sidebar_navigation ul li a, .sidebar .library ul li a {
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+}
+.sidebar .sidebar_navigation ul li a span, .sidebar .library ul li a span {
+  padding: 0 15px 0 0;
+}
+.sidebar .library {
+  margin: 10px 0 0 0;
+  padding-bottom: 20px;
+}
+.sidebar .library .library_logo {
+  background-color: #121212;
+  display: flex;
+  border-radius: 8px;
+  padding: 20px 0 0 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sidebar .library .library_logo .logo_lib a {
+  padding-right: 20px;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  font-family: "DM Sans", sans-serif;
+}
+.sidebar .library .library_logo .logo_lib a span {
+  padding: 0 15px 0 0;
+}
+.sidebar .library .library_logo .plus a {
+  padding-right: 20px;
+  text-align: center;
+  color: #b3b3b3;
+}
+
+/*# sourceMappingURL=style.css.map */
