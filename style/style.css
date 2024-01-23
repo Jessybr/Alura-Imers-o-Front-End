@@ -47,30 +47,138 @@ h1 {
 .sidebar .library {
   margin: 10px 0 0 0;
   padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 600;
+  color: #b3b3b3;
 }
-.sidebar .library .library_logo {
+.sidebar .library .library_content {
   background-color: #121212;
   display: flex;
   border-radius: 8px;
-  padding: 20px 0 0 20px;
+  padding-left: 20px;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
-.sidebar .library .library_logo .logo_lib a {
+.sidebar .library .library_content .library_button {
   padding-right: 20px;
   color: #b3b3b3;
   font-weight: 600;
   font-size: 14px;
   font-family: "DM Sans", sans-serif;
 }
-.sidebar .library .library_logo .logo_lib a span {
+.sidebar .library .library_content .library_button span {
   padding: 0 15px 0 0;
 }
-.sidebar .library .library_logo .plus a {
+.sidebar .library .library_content .fa-plus {
   padding-right: 20px;
   text-align: center;
   color: #b3b3b3;
+  margin: 24px 10px;
+}
+.sidebar .library .section-playlist {
+  background-color: #242424;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  color: #b3b3b3;
+  font-weight: 600;
+  font-size: 14px;
+  margin: 8px 10px;
+  padding: 16px 20px;
+  font-family: "DM Sans", sans-serif;
+  border-radius: 10px;
+}
+.sidebar .library .section-playlist .section-playlit-content {
+  display: flex;
+  flex-direction: column;
+}
+.sidebar .library .section-playlist .section-playlit-content .text {
+  padding-bottom: 14px;
+  color: #fff;
+}
+.sidebar .library .section-playlist .section-playlit-content .title {
+  font-weight: 700;
+}
+.sidebar .library .section-playlist .section-playlit-content .subtitle {
+  font-weight: 500;
+  font-size: 12px;
+}
+.sidebar .library .section-playlist .section-playlit-content .section-playlist_button {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  color: #000;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  width: 113px;
+  margin-top: 12px;
+  padding: 10px;
+}
+.sidebar .library .cookies {
+  margin: 25px 20px;
+}
+.sidebar .library .cookies a {
+  color: #b3b3b3;
+  font-weight: 500;
+  font-size: 10px;
+}
+.sidebar .library .cookies a:hover {
+  text-decoration: underline;
+}
+.sidebar .library .languages .languages_button {
+  background-color: transparent;
+  border: 1px solid #878787;
+  color: #fff;
+  cursor: pointer;
+  align-items: center;
+  font-weight: bold;
+  width: 170px;
+  margin: 8px;
+  padding: 8px;
+  border-radius: 20px;
+}
+
+.footer_content {
+  position: fixed;
+  top: 610px;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 97%;
+  margin: 9px;
+  background: linear-gradient(90deg, #AE2997, #8062C6, #5496F1);
+  padding: 10px 15px;
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  line-height: 20px;
+}
+.footer_content .footer_text span {
+  font-size: 13px;
+  font-weight: 600;
+}
+.footer_content .footer_text p {
+  font-size: 16px;
+  font-weight: 500;
+}
+.footer_content .footer_button {
+  background-color: #fff;
+  color: #000000;
+  height: 48px;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
