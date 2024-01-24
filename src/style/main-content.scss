@@ -1,0 +1,133 @@
+@import './vars.scss';
+
+.main-container{
+    max-width: 80vw;
+    height: 100vh;
+    margin-left: 320px;
+    margin-right: 56px;
+
+    .header_navigation{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 16px;
+        margin: 10px;
+        border-radius: 8px;
+        background-color: $secondary-color;
+        padding: 12px;
+
+        .navigation{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            .arrow-left{
+                margin: 1.25rem;
+            }
+
+            .arrow-left, .arrow-right{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                background: $bg-icon;
+                background-color: $bg-arrow-color;
+                border-radius: 50%;
+                border: none;
+                cursor: pointer;
+            }
+        }
+
+        
+        .header_login{
+            display: flex;
+            align-items: center;
+        }
+
+        .header_search{
+            display: flex;
+            align-items: center;
+            width: 364px;
+            height: 48px;
+            margin-left: 8px;
+            background-color: $quaternary-color;
+            border-radius: 500px;
+            border: 1px solid transparent;
+
+            img{
+                width: 16px;
+                height: 16px;
+                margin-left: 10px;
+            }
+
+            input{
+                background: transparent;
+                border: none;
+                padding: 0 100px 0 12px;
+                color: $quinary-color;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                white-space: nowrap;
+                outline: none;
+            }
+        }
+
+        .header_login{
+            display: flex;
+            align-items: center;
+
+            .subscribe{
+                color: #a7a7a7;
+                font-size: 16px;
+                font-weight: 700;
+                background-color: transparent;
+                margin-right: 32px;
+
+                &:hover{
+                    transform: scale(1.05);
+                    color: $quinary-color;
+                }
+            }
+
+            .login{
+                width: 100px;
+                height: 48px;
+                color: $primary-color;
+                font-size: 16px;
+                font-weight: 700;
+                border-radius: 40px;
+                background-color: $quinary-color;
+
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+
+    .playlist-conteiner{
+        @extend .header_navigation;
+
+        #result-playlists{
+            .playlist{
+                margin: 40px 20px;
+
+                #greeting{
+                    color: $quinary-color;
+                    font-size: 32px;
+                    font-weight: 700;
+                    margin-bottom: 48px;
+                }
+
+                .session{
+                    color: $quinary-color;
+                    font-size: 22px;
+                    font-weight: bolder;
+                    margin-bottom: 48px;
+                }
+            }
+        }
+    }
+}
+
