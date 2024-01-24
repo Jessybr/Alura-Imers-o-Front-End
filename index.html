@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./src/style/reset.css">
     <title>Spotify Imersão</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./src/style/sidebar-footer.css">
+    <link rel="stylesheet" href="./src/style/main-content.css">
 </head>
 <body>
 
@@ -13,7 +14,7 @@
         <nav class="sidebar_navigation">
             <div class="logo">
                 <a href="index.html">
-                    <img src="./assets/icons/logo-spotify.png" alt="logo spotify">
+                    <img src="./src/assets/icons/logo-spotify.png" alt="logo spotify">
                 </a>
             </div>
             <ul>
@@ -47,10 +48,22 @@
                     <span class="text subtitle">É fácil, vamos te ajudar.</span>
                     <button class="section-playlist_button">Criar playlist</button>
                 </div>
+                <div class="section-playlit-content">
+                    <span class="text title">Que tal seguir um podcast novo?</span>
+                    <span class="text subtitle">Avisamos você sobre novos episódios.</span>
+                    <button class="section-playlist_button btn-expl">Explorar podcasts</button>
+                </div>
             </section>
 
             <div class="cookies">
+                <a href="">Legal</a>
+                <a href="">Centro de Privacidade</a>
+                <a href="">Política de Privacidade</a>
                 <a href="">Cookies</a>
+                <a href="">Sobre anúncios</a>
+                <a href="">Acessibilidade</a>
+                <a href="">Notice at Collection</a>
+                <a href="">Your Privacy Choices</a>
             </div>
 
             <div class="languages">
@@ -62,6 +75,38 @@
 
         </div>
     </div>
+
+    <main>
+        <div class="main-container">
+            <nav class="header_navigation">
+                <div class="navigation">
+                    <button class="arrow-left">
+                        <img src="./src/assets/icons/small-left.png" alt="Seta esquerda">
+                    </button>
+                    <button class="arrow-right">
+                        <img src="./src/assets/icons/small-right.png" alt="Seta direita">
+                    </button>
+                </div>
+                <div class="header_search">
+                    <img src="./src/assets/icons/search.png" alt="">
+                    <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?" />
+                </div>
+                <div class="header_login">
+                    <button class="subscribe">Inscreva-se</button>
+                    <button class="login">Entrar</button>
+                </div>
+            </nav>
+
+            <div class="playlist-conteiner">
+                <div id="result-playlists">
+                    <div class="playlist">
+                        <h1 id="greeting">Boa tarde</h1>
+                        <h2 class="session">Navegar por todas as seções</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer class="footer_content">
         <div class="footer_text">
